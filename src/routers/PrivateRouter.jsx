@@ -18,7 +18,7 @@ export const PrivateRouter = ({ children }) => {
     if( verifyUserLogged )
         return <LoadingPage />
 
-    return token === null ? 
+    return token === null && false ? 
         <Navigate to={ login_index } /> :
         children
 }

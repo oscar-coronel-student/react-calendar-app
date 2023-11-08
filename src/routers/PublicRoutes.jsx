@@ -1,7 +1,7 @@
 import { Route, Routes, Navigate } from "react-router-dom"
 
 import { routes } from "./routes"
-import { Login } from "../components/auth/Login"
+import { LoginPage } from "../components/auth/LoginPage"
 
 
 export const PublicRoutes = () => {
@@ -11,7 +11,7 @@ export const PublicRoutes = () => {
     return <>
         <div>
             <Routes>
-                <Route path={ getPublicRoute('login_index') } element={ <Login /> } />
+                <Route path={ getPublicRoute('login_index') } element={ <LoginPage /> } />
 
                 <Route path="*" element={ <Navigate to={ getPublicRoute('login_index') } replace /> } />
             </Routes>

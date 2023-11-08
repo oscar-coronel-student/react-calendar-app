@@ -14,7 +14,6 @@ import { PublicRoutes } from './PublicRoutes'
 
 
 import { PageNotFound } from '../components/errors/PageNotFound'
-import { Root } from '../components/root/Root'
 
 export const AppRouter = () => {
 
@@ -24,7 +23,7 @@ export const AppRouter = () => {
         <Router>
             <Routes>
 
-                <Route path="/" element={ <Root /> } />
+                { /* <Route path="/" element={ <Root /> } /> */ }
 
                 <Route path={ `${ guest }*` } element={ 
                     <PublicRouter>

@@ -1,0 +1,17 @@
+$event-bg: #31ad6f;
+$event-border: darken(#31ad6f, 10%);
+$event-outline: #3cf89a;
+
+@import 'react-big-calendar/lib/sass/styles';
+
+.calendar-name{
+    font-size: 11px;
+}
+
+.react-datetime-picker input:focus {
+    outline: none;
+}
+
+.react-datetime-picker__wrapper {
+    border: 0px solid gray !important;
+}

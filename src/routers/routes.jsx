@@ -9,7 +9,7 @@ const prefixes = {
 }
 
 const private_routes = {
-    'home_index': 'home',
+    'home_index': '',
 }
 
 const public_routes = {

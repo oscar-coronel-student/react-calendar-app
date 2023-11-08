@@ -18,7 +18,7 @@ export const useVerifyUserLogged = async ( callback ) => {
             }
             callback( response )
             dispatch( verifyUserLogged( false ) )
-        }, 3000)
+        }, 1000)
     }, [ dispatch, callback ])
 
 }
